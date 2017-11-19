@@ -21,6 +21,9 @@ public class FlyPickup : MonoBehaviour {
             //..decrement the total num of flies..
             FlySpawner.totalFlies--;
 
+            //...update the score...
+            ScoreCounter.score++;
+
             Destroy(gameObject);
         
         }
